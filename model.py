@@ -46,7 +46,7 @@ def detect_objects(image, net, output_layers, classes, confidence_threshold, nms
         x, y, w, h = boxes[i]
         label = str(classes[class_ids[i]])
         confidence = confidences[i]
-        detected_objects.append({"class": label, "confidence": confidence * 100})
+        detected_objects.append({"class": label, "confidence": confidence * 100, "box": (x, y, x + w, y + h)})
 
     return detected_objects
 

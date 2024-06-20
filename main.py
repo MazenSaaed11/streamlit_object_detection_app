@@ -73,7 +73,7 @@ if st.session_state.show_results:
     if detected_objects:
         detected_info = "### Objects detected:\n"
         for obj in detected_objects:
-            detected_info += f"- **Class:** {obj['class']}, **Confidence:** {obj['confidence']:.2f}, **Box:** {obj['box']}\n"
+            detected_info += f"- **Class:** {obj['class']}, **Confidence:** {obj['confidence']:.2f}%\n"
         result.markdown(detected_info)
 
 if st.session_state.show_boxed_image:
