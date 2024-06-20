@@ -1,5 +1,4 @@
-streamlit                                                         
-cv2                    
+streamlit
+opencv-python-headless
 numpy
-PIL
-model
+Pillow
