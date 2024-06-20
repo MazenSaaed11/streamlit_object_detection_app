@@ -4,9 +4,9 @@ import numpy as np
 from PIL import Image
 import model
 
-# loading yolov3 model
-weights_path = "yolov3.weights"
-config_path = "yolov3.cfg"
+# loading yolov3-tiny model
+weights_path = "yolov3-tiny.weights"
+config_path = "yolov3-tiny.cfg"
 names_path = "coco.names"
 net, output_layers, classes = model.load_yolo(weights_path, config_path, names_path)
 
