@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
+import streamlit as st
 
-
+@st.cache_resource
 def load_yolo(weights_path, config_path, names_path):
     net = cv2.dnn.readNet(weights_path, config_path)
     layer_names = net.getLayerNames()

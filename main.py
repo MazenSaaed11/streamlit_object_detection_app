@@ -5,8 +5,8 @@ from PIL import Image
 import model
 
 # loading yolov3-tiny model
-weights_path = "yolov3-tiny.weights"
-config_path = "yolov3-tiny.cfg"
+weights_path = "yolov3.weights"
+config_path = "yolov3.cfg"
 names_path = "coco.names"
 net, output_layers, classes = model.load_yolo(weights_path, config_path, names_path)
 
@@ -23,7 +23,7 @@ st.markdown('---')
 
 user_image, confidence = st.columns([6, 6])
 input_image = user_image.file_uploader("Please upload an image to start detecting...", type=["PNG", "JPEG", "JPG"])
-threshold = confidence.slider(label='Confidence Threshold(%):', min_value=0, max_value=100, step=1, value=80)
+threshold = confidence.slider(label='Confidence Threshold(%):', min_value=0, max_value=100, step=1, value=50)
 confidence.caption('Move the slider to choose how certain you want the app to be when detecting objects.')
 
 image_placeholder = st.empty()
