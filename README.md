@@ -18,7 +18,7 @@ This web application utilizes the YOLOv3 model to detect objects within uploaded
   
 ## Demo
 
-You can try the web app [here](https://mazenobjectdetector.streamlit.app/).
+You can try the web app [here](https://mazenobjectdetection.streamlit.app/).
 
 ## Technologies Used
 
